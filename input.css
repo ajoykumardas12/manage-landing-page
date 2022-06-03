@@ -4,9 +4,9 @@
 
 body {
     background-image: url('../img/bg-tablet-pattern.svg');
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     background-size: 800px;
-    background-position: 90% -25%;
+    background-position: 110% -22%;
 }
 
 #cta{
@@ -72,22 +72,7 @@ body {
     transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
-/* .swiper {
-    width: 600px;
-    height: 300px;
-  } */
-
-/* .swiper{
-    overflow: visible;
-}
-
-.swiper-wrapper{
-    overflow: visible;
-}
-
-.swiper-slide{
-    overflow: visible;
-} */
+/* swiper pagination custom css */
 .swiper-pagination{
     margin-bottom: -50px;
 }

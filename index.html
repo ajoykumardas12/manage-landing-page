@@ -15,6 +15,13 @@
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
   </head>
   <body>
     <!-- Navbar -->
@@ -36,7 +43,7 @@
         <!-- button -->
         <a
           href="#"
-          class="hidden md:block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+          class="hidden md:block p-3 px-6 pt-2 text-white font-semibold bg-brightRed rounded-full baseline hover:bg-brightRedLight shadow-lg shadow-brightRed/50"
           >Get Started</a
         >
 
@@ -86,7 +93,7 @@
           <div class="flex justify-center md:justify-start">
             <a
               href=""
-              class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+              class="p-3 px-6 pt-2 text-white font-semibold bg-brightRed rounded-full baseline hover:bg-brightRedLight shadow-lg shadow-brightRed/50"
               >Get Started</a
             >
           </div>
@@ -127,7 +134,7 @@
             >
               <div class="flex items-center space-x-2">
                 <div
-                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
+                  class="px-4 py-2 text-white font-medium rounded-full md:py-1 bg-brightRed"
                 >
                   01
                 </div>
@@ -159,7 +166,7 @@
             >
               <div class="flex items-center space-x-2">
                 <div
-                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
+                  class="px-4 py-2 text-white font-medium rounded-full md:py-1 bg-brightRed"
                 >
                   02
                 </div>
@@ -190,7 +197,7 @@
             >
               <div class="flex items-center space-x-2">
                 <div
-                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
+                  class="px-4 py-2 text-white font-medium rounded-full md:py-1 bg-brightRed"
                 >
                   03
                 </div>
@@ -337,7 +344,7 @@
         <div class="my-16">
           <a
             href="#"
-            class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+            class="p-3 px-6 pt-2 text-white font-semibold bg-brightRed rounded-full baseline hover:bg-brightRedLight shadow-lg shadow-brightRed/50"
             >Get Started</a
           >
         </div>
@@ -360,7 +367,7 @@
         <div>
           <a
             href="#"
-            class="p-3 px-6 pt-2 text-brightRed bg-white rounded-full shadow-2xl baseline hover:bg-gray-900"
+            class="p-3 px-6 pt-2 font-semibold text-brightRed bg-white rounded-full baseline hover:text-opacity-50 shadow-lg"
             >Get Started</a
           >
         </div>
@@ -388,23 +395,25 @@
           <div class="flex justify-center space-x-8 md:space-x-5">
             <!-- link 1 -->
             <a href="">
-              <img src="img/icon-facebook.svg" alt="" class="h-8" />
+              <!-- <img src="img/icon-facebook.svg" alt="" class="h-8 text-white  hover:brightRedLight" /> -->
+              <i class="fa-brands fa-facebook-square text-4xl text-white hover:text-brightRed"></i>
             </a>
             <!-- link 2 -->
             <a href="">
-              <img src="img/icon-youtube.svg" alt="" class="h-8" />
+              <!-- <img src="img/icon-youtube.svg" alt="" class="h-8" /> -->
+              <i class="fa-brands fa-youtube text-4xl text-white hover:text-brightRed"></i>
             </a>
             <!-- link 3 -->
             <a href="">
-              <img src="img/icon-twitter.svg" alt="" class="h-8" />
+              <i class="fa-brands fa-twitter text-4xl text-white hover:text-brightRed"></i>
             </a>
             <!-- link 4 -->
             <a href="">
-              <img src="img/icon-pinterest.svg" alt="" class="h-8" />
+              <i class="fa-brands fa-pinterest text-4xl text-white hover:text-brightRed"></i>
             </a>
             <!-- link 5 -->
             <a href="">
-              <img src="img/icon-instagram.svg" alt="" class="h-8" />
+              <i class="fa-brands fa-instagram text-4xl text-white hover:text-brightRed"></i>
             </a>
           </div>
         </div>
@@ -434,7 +443,7 @@
                 placeholder="Updated in your inbox"
               />
               <button
-                class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLigt focus:outline-none"
+                class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight"
               >
                 Go
               </button>
@@ -449,6 +458,8 @@
 
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script>
       const swiper = new Swiper(".swiper", {
         // Optional parameters
@@ -472,5 +483,6 @@
         },
       });
     </script>
+    <script src="https://kit.fontawesome.com/070d069c0e.js" crossorigin="anonymous"></script>
   </body>
 </html>
