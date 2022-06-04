@@ -16,12 +16,12 @@
     />
     <link rel="stylesheet" href="css/main.css" />
     <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- Navbar -->
@@ -62,7 +62,7 @@
       <div class="md:hidden">
         <div
           id="menu"
-          class="hidden absolute flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+          class="mobile-nav hidden absolute rounded-md flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-2xl"
         >
           <a href="#">Pricing</a>
           <a href="#">Product</a>
@@ -271,7 +271,7 @@
         </div>
 
         <!-- Slider main container -->
-        <div class="swiper md:hidden" style="overflow: visible">
+        <div class="swiper md:hidden">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper border-red-700">
             <!-- Slides -->
@@ -396,24 +396,34 @@
             <!-- link 1 -->
             <a href="">
               <!-- <img src="img/icon-facebook.svg" alt="" class="h-8 text-white  hover:brightRedLight" /> -->
-              <i class="fa-brands fa-facebook-square text-4xl text-white hover:text-brightRed"></i>
+              <i
+                class="fa-brands fa-facebook-square text-4xl text-white hover:text-brightRed"
+              ></i>
             </a>
             <!-- link 2 -->
             <a href="">
               <!-- <img src="img/icon-youtube.svg" alt="" class="h-8" /> -->
-              <i class="fa-brands fa-youtube text-4xl text-white hover:text-brightRed"></i>
+              <i
+                class="fa-brands fa-youtube text-4xl text-white hover:text-brightRed"
+              ></i>
             </a>
             <!-- link 3 -->
             <a href="">
-              <i class="fa-brands fa-twitter text-4xl text-white hover:text-brightRed"></i>
+              <i
+                class="fa-brands fa-twitter text-4xl text-white hover:text-brightRed"
+              ></i>
             </a>
             <!-- link 4 -->
             <a href="">
-              <i class="fa-brands fa-pinterest text-4xl text-white hover:text-brightRed"></i>
+              <i
+                class="fa-brands fa-pinterest text-4xl text-white hover:text-brightRed"
+              ></i>
             </a>
             <!-- link 5 -->
             <a href="">
-              <i class="fa-brands fa-instagram text-4xl text-white hover:text-brightRed"></i>
+              <i
+                class="fa-brands fa-instagram text-4xl text-white hover:text-brightRed"
+              ></i>
             </a>
           </div>
         </div>
@@ -435,18 +445,28 @@
 
         <!-- input container -->
         <div class="flex flex-col justify-between">
-          <form action="">
+          <form name="newsletterForm" action="" onsubmit="return false">
             <div class="flex space-x-3">
               <input
                 type="text"
                 class="flex-1 px-4 rounded-full focus:outline-none"
+                name="email"
                 placeholder="Updated in your inbox"
+                id="emailInput"
               />
               <button
+                type="submit"
                 class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight"
+                onclick="validateEmail(document.newsletterForm.email)"
               >
                 Go
               </button>
+            </div>
+            <div class="hidden text-red-500 italic font-medium pl-4" id="invalidEmail">
+              <p>please enter a valid email</p>
+            </div>
+            <div class="hidden text-emerald-500 italic font-medium pl-4" id="validEmail">
+              <p>You will be updated soon</p>
             </div>
           </form>
           <div class="hidden text-white md:block">
@@ -457,9 +477,9 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/validateEmail.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     <script>
       const swiper = new Swiper(".swiper", {
         // Optional parameters
@@ -483,6 +503,5 @@
         },
       });
     </script>
-    <script src="https://kit.fontawesome.com/070d069c0e.js" crossorigin="anonymous"></script>
   </body>
 </html>

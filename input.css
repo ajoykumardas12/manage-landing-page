@@ -72,6 +72,11 @@ body {
     transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
+/* swiper overflow */
+.swiper{
+    overflow: visible;
+}
+
 /* swiper pagination custom css */
 .swiper-pagination{
     margin-bottom: -50px;
@@ -87,4 +92,11 @@ body {
 .swiper-pagination-bullet-active {
     color: hsl(12, 88%, 59%);
     background: hsl(12, 88%, 59%);
+}
+
+.invalid-border{
+    border-style: solid;
+    border-color: rgb(239 68 68);
+    border-width: 0.5px;
+    color: rgb(239 68 68);
 }
