@@ -73,13 +73,13 @@ body {
 }
 
 /* swiper overflow */
-.swiper{
+/* .swiper{
     overflow: visible;
-}
+} */
 
 /* swiper pagination custom css */
 .swiper-pagination{
-    margin-bottom: -50px;
+    margin-bottom: -15px;
 }
 
 .swiper-pagination-bullet {
