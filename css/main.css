@@ -496,10 +496,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-.fixed {
-  position: fixed;
-}
-
 .absolute {
   position: absolute;
 }
@@ -553,10 +549,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .-mt-14 {
   margin-top: -3.5rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
 }
 
 .block {
@@ -681,10 +673,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .self-end {
   align-self: flex-end;
-}
-
-.overflow-visible {
-  overflow: visible;
 }
 
 .rounded-full {
@@ -955,7 +943,7 @@ body {
 /* swiper pagination custom css */
 
 .swiper-pagination{
-  margin-bottom: -15px;
+  margin-bottom: -13px;
 }
 
 .swiper-pagination-bullet {
